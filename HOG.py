@@ -14,7 +14,7 @@ def hog_feature_extraction(image):
     img1 = cv2.imread(image,cv2.IMREAD_GRAYSCALE)
 
     #downsampling the image to 1:10 rows and cols
-    img_rescaled = rescale(img1 , 0.1, anti_aliasing=True)
+    img_rescaled = rescale(img1, 0.1, anti_aliasing=True)
 
     #extracting features of the histogram according to the mentioned parameter
     features, img_hog = hog(img_rescaled,

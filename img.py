@@ -70,6 +70,3 @@ def color_moments(image):
 
         return yuv_mean , yuv_var , yuv_skewness
 
-
-
-
